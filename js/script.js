@@ -6,8 +6,14 @@
 
 // Document Ready Function. All of your jQuery should go in here. 
 $( document ).ready(function() {
-  
-
+$("button").click(function(){
+    var message=$("input").val();
+    var resultshow = ay(message);
+    $("#message").text(resultshow);
+});
+function ay(word){
+ return word + "ay";    
+}
 
 
 });
